@@ -1,3 +1,11 @@
+/*Variaveis*/
+:root {
+    --cor01: #56E39F;
+    --cor02: #E2294F;
+    --cor03: #E899DC;
+    --cor04: #69306D;
+    --cor05: #361134;
+}
 /*Global*/
 
 * {
@@ -6,7 +14,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #E6E6E6;
+    background-color: #e9d2e5;
     font-size: 1em;
 }
 ul {
@@ -14,7 +22,7 @@ ul {
 }
 /*Cabeçalho da página*/
 header {
-    background-color: rgb(255, 170, 0);
+    background-color: var(--cor05);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -23,19 +31,20 @@ header {
 }
 #logo h1 {
     font-size: 2.3em;
-    color: rgb(53, 53, 53);
+    color: var(--cor02);
 }
 nav {
     padding: 10px;
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--cor02);
     padding: 10px;
 }
 nav a:hover {
-    background-color: white;
-    color: rgb(255, 170, 0);
+    background-color: var(--cor02);
+    border-radius: 5px;
+    color: var(--cor05);
 }
 /*Estrutura da página*/
 
@@ -51,18 +60,20 @@ main {
 }
 #conteudo section {
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.399);
     padding: 20px;
     margin-bottom: 20px;
 }
 #conteudo section h2 {
-    color: rgb(255, 170, 0);
+    color: var(--cor02);
 }
 #conteudo section p {
     text-align: justify;
 }
 #conteudo section a {
     text-decoration: none;
-    color: rgb(255, 170, 0);
+    color: var(--cor02);
 }
 #conteudo section a:hover {
     text-decoration: underline;
@@ -84,11 +95,15 @@ aside {
 }
 aside section {
     background-color: white;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.399);
+    border-radius: 10px;
     padding: 10px;
 }
 aside section h2 {
-    background-color: rgb(182, 182, 182);
-    color: rgb(74, 74, 74);
+    background-color: rgb(94, 0, 88);
+    color: var(--cor02);
+    text-align: center;
+    border-radius: 5px;
     padding: 5px;
     font-size: 1.3em;
 }
@@ -97,7 +112,7 @@ aside section p {
 }
 aside section a{
     text-decoration: none;
-    color: rgb(255, 170, 0);
+    color: var(--cor02);
     list-style: none;
 }
 aside section a:hover {
@@ -111,7 +126,8 @@ aside section a:hover {
 }
 /*rodapé*/
 footer {
-    background-color: #CCC;
+    background-color: var(--cor05);
+    color: var(--cor02);
     text-align: center;
     padding: 20px;
 }
